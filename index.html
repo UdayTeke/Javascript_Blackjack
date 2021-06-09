@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Javascript on steoroid</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your age in days</h2>
+            <div class="flex-box-container-1">
+                <div>
+                    <button class="btn btn-primary" onclick="ageIndays()">Click me</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" onclick="reset()">Reset</button>
+                </div>
+             </div> 
+             <div class="flex-box-container-1">
+                    <div id="flex-box-result"></div>
+
+             </div>  
+
+
+    </div>
+    <div class="container-2">
+        <h2 id="changeMycolor">Challenge 2: Change the color of the all button.</h2>
+        <div class="flex-box-pick-color"> 
+            <form action="">
+                <select name="backdrop" id="backgorund" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+
+            </form> 
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>  
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3 : Blackjack</h2>
+        <h3><span id="blackjack-result"> Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+
+
+
+        </div>
+
+        <div class="flex-blackjack-row-2">
+
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <th><span id="wins">0</span></th>
+                    <th><span id="losses">0</span></th>
+                    <th><span id="draws">0</span></th>
+                </tr>
+
+
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+    <script src="static/js/script.js">
+           
+    
+    </script>
+</body>
+</html>
